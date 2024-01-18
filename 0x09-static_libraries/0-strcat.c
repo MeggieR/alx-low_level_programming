@@ -3,7 +3,7 @@
  * _strcat - join two strings
  * @dest: take this first value
  * @src: add to this second value
- * Return: void
+ * Return: a pointer to the concatenated string
  */
 char *_strcat(char *dest, char *src)
 {
