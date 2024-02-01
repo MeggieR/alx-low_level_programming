@@ -1,8 +1,8 @@
 #include "3-calc.h"
 #include <stdlib.h>
 /**
-*get_op_func - selects function operator for the user
-*get_op_func - Selects funvtion needed by user
+*get_op_func - selects what function is
+*required by user to perfom operations
 *@s: operator
 */
 int (*get_op_func(char *s))(int, int)
