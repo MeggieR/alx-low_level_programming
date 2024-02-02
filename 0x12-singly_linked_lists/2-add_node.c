@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include <lists.h>
+#include "lists.h"
 /**
 *add_node - adds node
 *@head: points to list
