@@ -3,17 +3,10 @@
 # Variables
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:%.c=%.o)
 NAME = school
 
-.PHONY: all clean
 
-all: $(NAME)
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	$(CC) -c -o $@ $<
-
-	rm -f $(OBJ) $(NAME)
