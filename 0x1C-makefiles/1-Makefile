@@ -1,0 +1,6 @@
+# Makefile for making an executable named school using variables
+CC = gcc
+SRC = main.c school.c
+
+all: $(SRC)
+	$(CC) $(SRC) -0 school
